@@ -676,13 +676,13 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 @keyframes animRotIn{
-    from{ opacity:1; }   
-    to{ opacity:.1; }  
+    from{ opacity:1; filter: invert(00%);}   
+    to{ opacity:1; filter: invert(200%);}  
 }
 
 @keyframes animRotOut{
     0%   { opacity:1;  }
-    100% { opacity:.1;  }
+    100% { opacity:1;  }
     
 }
 
@@ -804,10 +804,11 @@ img::-moz-selection{color:#fff;background:0 0}
 
 
 .nickInBody{
-    font-size: 3em; 
+    font-size: 4em; 
     text-align: right; 
     color: #000; 
     font-family: sans-serif;
+    font-weight: bold;
     padding-top: 5%;
 }
 
@@ -815,6 +816,44 @@ img::-moz-selection{color:#fff;background:0 0}
     font-size: 3em; 
     text-align: left; 
     color: #000; 
-    font-family: sans-serif;
+    font-family: 'Amatic SC';
     padding-top: 5%;
 }
+
+.nickInBodyCenter{
+    font-size: 3em; 
+    text-align: center; 
+    color: #000; 
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.parallax{
+      /* The image used */
+    background-image: url(../img/Decor/bg_xhatchInv.svg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxAlt{
+      /* The image used */
+    background-image: url(../img/Decor/bg_xhatchPurple.svg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
