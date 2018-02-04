@@ -841,7 +841,7 @@ img::-moz-selection{color:#fff;background:0 0}
     /* Full height */
     height: 100%; 
 
-    /* Create the parallax scrolling effect */
+    /* Create the parallax scroWlling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
