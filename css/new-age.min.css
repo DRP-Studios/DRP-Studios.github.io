@@ -314,6 +314,26 @@ img::-moz-selection{color:#fff;background:0 0}
     margin: auto;
 }
 
+.imgCenter{
+    display: block;
+    margin: auto;
+    
+}
+
+.imgHeader{
+    width: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.imgLogo{
+    width: 75%;
+    padding: 5%;
+    border-radius: 5%;
+    overflow: hidden;
+    z-index: -1;
+}
+
 .custHeader{
     text-align: center; 
     color: azure; 
@@ -349,11 +369,13 @@ img::-moz-selection{color:#fff;background:0 0}
 .btnPad{
     padding: 5%;
     background-color: black;
+    z-index: 9999;
 }
 
 .btnPad2{
     padding: 25%;
     background-color: black;
+    z-index: 9999;
 }
 /* ----------------------------------------------
  * w: http://animista.net, t: @cssanimista
@@ -675,24 +697,18 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 
+.animRot{
+    transform: scale(1);
+    transition: all 1s;
+}
+
 .animRot:hover{
-    animation: animRotIn 1s forwards;
+    transform: scale(.75);
+        border-radius: 100%;
+        opacity:1; 
+        filter: invert(1);
+        background-color: rgba(0, 0, 0, 0);
     
-}
-
-@keyframes animRotIn{
-    from{ opacity:1; filter: invert(00%);}   
-    to{ opacity:1; filter: invert(200%);background-color: rgba(0, 0, 0, 0); } 
-    
-    0%{transform: scale(1);}
-    50%{transform: scale(.5);}
-    100%{transform: rscale(1);}
-    
-}
-
-@keyframes animRotOut{
-    0%   { opacity:1;  }
-    100% { opacity:1; background-color: rgba(0, 0, 0, 0); }   
 }
 
 
@@ -839,17 +855,79 @@ img::-moz-selection{color:#fff;background:0 0}
     padding-top: 5%;
 }
 
+.nickInBodyCenterMusic{
+    font-size: 2em; 
+    text-align: center; 
+    color: #2daf22; 
+    font-family: 'Amatic SC', serif;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.nickInBodyCenterSmall{
+    font-size: 3.5em; 
+    text-align: center; 
+    color: #000; 
+    font-family: 'Amatic SC', serif;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
 .nickSplit{
     display: block;
     margin: auto;
     width: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
-     filter: drop-shadow( 0px 0px 5px #000 );
+    filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
+    transition: all 1s ease-in-out; 
 }
 
 .nickSplitAnim:hover{
-    animation: enlarge .25s ease-in-out both;
+    transform: scale(1.2);
+    filter: invert(1); 
+    transform: translateY(10px);
+    transform: rotateX(30deg);
+    
+   
+}
+
+@keyframes splitAnim{
+      0%{
+        transform: scale(1,1);
+          filter: invert(0)
+    }
+    
+    50%{
+        filter: invert(.5)
+    }
+    100%{
+        transform: scale(1.2,1.2);
+        top:50%;
+        filter: invert(1)
+    }
+}
+
+:not(img):hover{
+    filter: blur(100px;)
+}
+.nickSpotify{
+    height: 80px;
+    width: 250px;
+    z-index: 1;
+    transition: all 1.5s;
+    filter: grayscale(1);
+}
+
+.nickSpotify:hover{
+    height: 720px;
+    width: 640px;
+    filter: grayscale(0);
+
 }
 
 .parallax{
@@ -880,21 +958,35 @@ img::-moz-selection{color:#fff;background:0 0}
     background-size: cover;
 }
 
-.enlarge:hover{
-       animation: enlarge 2s ease-in-out both; 
+.enlarge{
+    filter: grayscale(1);
+    filter: blur(1px);
+    transition: all 1.5s;
 }
 
-@keyframes enlarge{
-    0%{
-        transform: scale(1,1);
-    }
-    100%{
-        transform: scale(1.1,1.1);
-        top:50%;
-        left:50%;
-    }
-    
-    
+.enlarge:hover{
+    filter: grayscale(0);
+    filter: blur(0px);
+    position: relative;
+       transform: scale(3);
+        cursor:pointer;
+        background-color: #b22cff;
+        z-index: 100;
 }
+
+.fillTest{
+    filter: invert(0);
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    transition: all 1s;
+}
+
+.fillTest:hover{
+    filter: invert(1); 
+    filter:  drop-shadow(10px 10px 250px #ffffff);
+    transform: scale(1.25)
+
+}
+
+
 
 
