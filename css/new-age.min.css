@@ -682,7 +682,12 @@ img::-moz-selection{color:#fff;background:0 0}
 
 @keyframes animRotIn{
     from{ opacity:1; filter: invert(00%);}   
-    to{ opacity:1; filter: invert(200%);background-color: rgba(0, 0, 0, 0); }  
+    to{ opacity:1; filter: invert(200%);background-color: rgba(0, 0, 0, 0); } 
+    
+    0%{transform: scale(1);}
+    50%{transform: scale(.5);}
+    100%{transform: rscale(1);}
+    
 }
 
 @keyframes animRotOut{
@@ -832,6 +837,19 @@ img::-moz-selection{color:#fff;background:0 0}
     font-family: 'Amatic SC', serif;
     font-weight: bold;
     padding-top: 5%;
+}
+
+.nickSplit{
+    display: block;
+    margin: auto;
+    width: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+     filter: drop-shadow( 0px 0px 5px #000 );
+}
+
+.nickSplitAnim:hover{
+    animation: enlarge .25s ease-in-out both;
 }
 
 .parallax{
