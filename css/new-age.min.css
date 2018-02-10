@@ -329,9 +329,7 @@ img::-moz-selection{color:#fff;background:0 0}
 .imgLogo{
     width: 75%;
     padding: 5%;
-    border-radius: 5%;
-    overflow: hidden;
-    z-index: -1;
+    
 }
 
 .custHeader{
@@ -829,6 +827,19 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 
+.maInBodyCenterSmall{
+    font-size: 2.25em; 
+    text-align: center; 
+    color: #ffffff; 
+    font-family: 'Amatic SC', serif;
+    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
 .nickInBody{
     font-size: 4em; 
     text-align: right; 
@@ -912,9 +923,6 @@ img::-moz-selection{color:#fff;background:0 0}
     }
 }
 
-:not(img):hover{
-    filter: blur(100px;)
-}
 .nickSpotify{
     height: 80px;
     width: 250px;
@@ -960,23 +968,54 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .enlarge{
     filter: grayscale(1);
-    filter: blur(1px);
+    z-index: 1;
+    position: relative;
     transition: all 1.5s;
 }
 
 .enlarge:hover{
-    filter: grayscale(0);
-    filter: blur(0px);
     position: relative;
-       transform: scale(3);
-        cursor:pointer;
-        background-color: #b22cff;
-        z-index: 100;
+    filter: grayscale(0);
+    transform: scale(2);
+    z-index: 100;
+    background-color: #222;
+    border-radius: 5%;
+}
+
+.drainCol{
+    animation: drainColour 5s ease infinite both;
+}
+
+@keyframes drainColour{
+    0%{
+        filter: grayscale(0);
+    }
+    50%{
+        filter: grayscale(1);
+    }
+    100%{
+        filter: grayscale(0);
+    }
+}
+
+.drainCol:hover{
+    animation-name: drainColourHover;
+    animation-iteration-count: 1;
+    animation-duration: 1;
+}
+
+@keyframes drainColourHover{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 
 .fillTest{
     filter: invert(0);
-    filter: drop-shadow(0px 0px 5px #ffffff);
+    filter: drop-shadow(0px 0px 15px #ffffff);
     transition: all 1s;
 }
 
@@ -986,6 +1025,19 @@ img::-moz-selection{color:#fff;background:0 0}
     transform: scale(1.25)
 
 }
+
+.glow{
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    transition: all 1s;
+}
+
+.glow:hover{
+    filter:  drop-shadow(10px 10px 250px #ffffff);
+    transform: scale(1.1)
+
+}
+
+
 
 
 
