@@ -50,6 +50,7 @@ hr{max-width:100px;
     color:#fdcc52!important;background-color:transparent}
 .navbar-default .nav>li.active>a:focus:hover,.navbar-default .nav>li.active>a:hover
 {background-color:transparent}
+
 @media (min-width:768px){
     .navbar-default{background-color:transparent;border-color:transparent}
     .navbar-default .navbar-header .navbar-brand{color:rgba(255,255,255,.7)}
@@ -60,9 +61,18 @@ hr{max-width:100px;
     .navbar-default.affix .navbar-header .navbar-brand{color:#222}
     .navbar-default.affix .navbar-header .navbar-brand:focus,.navbar-default.affix .navbar-header .navbar-brand:hover{color:#fdcc52}
     .navbar-default.affix .nav>li>a,.navbar-default.affix .nav>li>a:focus{color:#222}.navbar-default.affix .nav>li>a:focus:hover,.navbar-default.affix .nav>li>a:hover{color:#fdcc52}}
-header{position:relative;width:100%;min-height:auto;overflow-y:hidden;background-color:#000}
-header .header-content{text-align:center;padding:150px 0 50px;position:relative
-}header 
+header{
+    position:relative;
+    width:100%;min-height:auto;
+    overflow-y:hidden;
+    background-color:#000}
+
+header .header-content{text-align:center;
+    padding:150px 0 50px;
+    position:relative
+}
+
+header 
 .header-content 
 .header-content-inner{
     position:relative;
@@ -273,6 +283,10 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+    
+    .bodyMargin{
+    margin: 0px;
+}
   
     .serviceBody{
     background-color: #333;
