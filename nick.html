@@ -77,19 +77,25 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        <!-- Spotify Widget -->
         
-                        <div style="position: fixed; bottom: 10px;right: 10px">
+            <div style="position: fixed; bottom: 10px;right: 10px">
                     <p class="text-focus-in nickInBodyCenterMusic">
-            Music gets me going, have a listen?<br>
+           Have a listen?<br>
                     </p>  
-             <iframe class="nickSpotify" src="https://open.spotify.com/embed?uri=spotify:user:1288263527:playlist:725aGyokF8dlL1ERF4ATsG&theme=white&view=list" width="300" height="380" frameborder="0" allowtransparency="true" style="display: block;margin: auto;opacity:.9"></iframe>
+            
+                
+             <iframe id="SpotifyWidget" class="nickSpotify " src="https://open.spotify.com/embed?uri=spotify:user:1288263527:playlist:725aGyokF8dlL1ERF4ATsG&theme=white&view=list" width="300" height="380" frameborder="0" allowtransparency="true" style="position: relative;margin: auto;"></iframe>
+                
             </div>
+          <!-- /Spotify Widget --> 
         
         <!-- /.container-fluid -->
     </nav>     
     
     
-    <section>      
+    <section>     
+        
         <div class="row extRow parallax" style="padding-bottom: 0%;padding-top: 0%;">  
                 
              <div class="col-md-12">          
@@ -131,7 +137,7 @@
           
            <div class="col-md-12 " style="padding-left: 5%">
                 <p class="text-focus-in nickInBodyCenterSmall">
-          Here's where the good stuff is.<br> I use a vwide range of tools to create my content, utilising the Adobe Suite for 2D illustrations and photo manipulation, a pen and paper for doodling / conceptualising, Blender for 3D modeling, and caffeine to power through!  
+          Here's where the good stuff is.<br> I use a wide range of tools to create my content, utilising the Adobe Suite for 2D illustrations and photo manipulation, a pen and paper for doodling / conceptualising, Blender for 3D modeling, and caffeine to power through!  
                     </p>
             </div>
             
@@ -156,12 +162,15 @@
                
     </section>
 
-    <section id="contact" class="contact bg-primary parallaxAlt" style="padding-top: 2%; padding-bottom: 2%">
+    <section id="contact" class="contact bg-primary"> 
+        <div class="padFull parallaxAlt">
             <h2>Contact Me</h2>
             <p style="color: azure">
                 Email: nicholass_scott@yahoo.se
             <br>Mobile: <a href="tel:+64220493670">(+64) 022 049 3670</a> <br>
                 </p>
+        </div>
+            
     </section>
 
     <!-- jQuery -->

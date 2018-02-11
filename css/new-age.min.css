@@ -272,21 +272,120 @@ img::-moz-selection{color:#fff;background:0 0}
     margin: 0px;
 }
 
-.serviceBody{
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .serviceBody{
     background-color: #333;
     color: azure;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 20%; 
-    padding-right:20%;
+    padding-left: 2%; 
+    padding-right:2%;
     font-size: 2em; 
     text-align: center; 
+
+        }
+    
+    .nickSplit{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
+    transition: all 1s ease-in-out; 
+}
+
+.nickSplitAnim:hover{
+    transform: scale(1.2);
+    filter: invert(1); 
+    transform: translateY(10px);
+    transform: rotateX(30deg);
+    
+   
+}
+
+@keyframes splitAnim{
+      0%{
+        transform: scale(1,1);
+          filter: invert(0)
+    }
+    
+    50%{
+        filter: invert(.5)
+    }
+    100%{
+        transform: scale(1.2,1.2);
+        top:50%;
+        filter: invert(1)
+    }
+}
+  
+}
+
+@media (min-width: 767px) {
+  
+    .serviceBody{
+        background-color: #333;
+        color: azure;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 20%; 
+        padding-right:20%;
+        font-size: 2em; 
+        text-align: center; 
+
+    }
+    
+    .mobScale{
+        width: 100%;
+        padding: 5%;
+        display: block;
+        margin: auto;
+        animation: mobScaleAnim 5s infinite ease both;
+    }
+    
+    @keyframes mobScaleAnim{
+        0%{
+            filter: drop-shadow(0px 0px 5px #fdcc52);
+        }
+        50%{
+            filter: drop-shadow(0px 0px 5px #222);
+        }
+        
+        100%{
+            filter: drop-shadow(0px 0px 5px #ac2fac);
+        }
+    }
+    
+    .mobScale:hover{
+        animation-name: mobScaleAnimInv;
+        transition-duration: 1s;
+        transform: scale(1.1);
+        filter: drop-shadow(0px 0px 5px #fdcc52);
+    
+    }
+    
+    @keyframes mobScaleAnimInv{
+         0%{
+            filter: drop-shadow(0px 0px 5px #fff);
+        }
+        50%{
+            filter: drop-shadow(0px 0px 5px #222);
+        }
+        
+        100%{
+            filter: drop-shadow(0px 0px 5px #fff);
+        }
+    }
+    
+
 }
 
 .logo{
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+
+    display: block;
+    margin: auto;
 }
 
 .nickNavBtn{
@@ -928,10 +1027,18 @@ img::-moz-selection{color:#fff;background:0 0}
     width: 250px;
     z-index: 1;
     transition: all 1.5s;
-    filter: grayscale(1);
+    filter: grayscale(.5);
 }
 
 .nickSpotify:hover{
+    height: 720px;
+    width: 640px;
+    filter: grayscale(0);
+
+}
+
+
+.nickSpotifyLarge{
     height: 720px;
     width: 640px;
     filter: grayscale(0);
@@ -954,10 +1061,11 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .parallaxAlt{
       /* The image used */
-    background-image: url(../img/Decor/bg_xhatchPurple.svg);
+    background-image: url(../img/Decor/parallaxDark.svg);
+    background-color: aliceblue;
 
     /* Full height */
-    height: 25%; 
+    height: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -1033,12 +1141,49 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .glow:hover{
     filter:  drop-shadow(10px 10px 250px #ffffff);
-    transform: scale(1.1)
 
 }
 
+#SpotifyWidget, .flipe {
+    text-align: center;
+    color: white;
+    margin: auto;
+    display: block;
+}
 
+#SpotifyWidget {
+    display: block;
+}
 
+.hide{
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+}
 
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+}
 
+.shoo{
 
+    border-radius: 5%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#btnHide .shooSwitch{   
+    background-color: black;
+    display: none;
+    transform: scale(3);
+}
