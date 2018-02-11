@@ -381,7 +381,7 @@ img::-moz-selection{color:#fff;background:0 0}
     
     
     .logo{
-
+    width: 50%;
     display: block;
     margin: auto;
 }
