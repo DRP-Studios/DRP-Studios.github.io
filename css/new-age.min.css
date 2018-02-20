@@ -301,6 +301,27 @@ img::-moz-selection{color:#fff;background:0 0}
     margin-left: -15px;
 }
     
+    .parallaxAlt{
+      /* The image used */
+    background-image: url(../img/Decor/parallaxDark.svg);
+    background-color: aliceblue;
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxAlt:hover{
+      /* The image used */
+    animation: paraAltAnim 30s ease infinite both;
+   
+}
+    
     .container-fluid {
      padding:0;
     margin: 0px;
@@ -345,7 +366,14 @@ img::-moz-selection{color:#fff;background:0 0}
     transform: translateY(10px);
     transform: rotateX(30deg);
     
+    
+    
    
+}
+    
+    .padService{
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 @keyframes splitAnim{
