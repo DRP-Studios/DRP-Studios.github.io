@@ -64,9 +64,9 @@ hr{max-width:100px;
 @media (min-width:768px){
     .navbar-default{background-color:transparent;border-color:transparent}
     .navbar-default .navbar-header .navbar-brand{color:rgba(255,255,255,.7)}
-    .navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover{color:#000}
+    .navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover{color:#fdcc52}
     .navbar-default .nav>li>a,.navbar-default .nav>li>a:focus{color:rgba(255,255,255,.7)}
-    .navbar-default .nav>li>a:focus:hover,.navbar-default .nav>li>a:hover{color:#000}
+    .navbar-default .nav>li>a:focus:hover,.navbar-default .nav>li>a:hover{color:#fdcc52}
     .navbar-default.affix{background-color:#fff;border-color:rgba(34,34,34,.1)}
     .navbar-default.affix .navbar-header .navbar-brand{color:#222}
     .navbar-default.affix .navbar-header .navbar-brand:focus,.navbar-default.affix .navbar-header .navbar-brand:hover{color:#fdcc52}
@@ -293,6 +293,10 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 @media (min-width: 250px) and (max-width: 767px) {
+    
+    .emailtext{
+        color: chocolate; font-size: 12pt
+    }
     
     .navbar-default { margin-bottom: 0px; }
     
@@ -1356,3 +1360,7 @@ img::-moz-selection{color:#fff;background:0 0}
     display: none;
     transform: scale(3);
 }
+
+ .emailtext{
+        color: chocolate; font-size: 24pt
+    }
