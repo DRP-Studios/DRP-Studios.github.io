@@ -368,11 +368,7 @@ img::-moz-selection{color:#fff;background:0 0}
     transform: scale(1.2);
     filter: invert(1); 
     transform: translateY(10px);
-    transform: rotateX(30deg);
-    
-    
-    
-   
+    transform: rotateX(30deg);  
 }
     
     .padService{
@@ -587,7 +583,7 @@ img::-moz-selection{color:#fff;background:0 0}
 .custHeader2{
     text-align: center; 
     color: azure; 
-    font-size: 3em;
+    font-size: 2.5em;
     padding-top: 20%;
 }
 
@@ -604,8 +600,8 @@ img::-moz-selection{color:#fff;background:0 0}
     text-align: center; 
     color: azure;
     font-size: 1.5em;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     padding-bottom: 5%;
 }
 
@@ -676,11 +672,6 @@ img::-moz-selection{color:#fff;background:0 0}
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-/**
- * ----------------------------------------
- * animation text-focus-in
- * ----------------------------------------
- */
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -705,6 +696,36 @@ img::-moz-selection{color:#fff;background:0 0}
     opacity: 1;
   }
 }
+
+.text-focus-out {
+	-webkit-animation: text-focus-out 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) forward;
+	        animation: text-focus-out 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
+
+}
+
+@-webkit-keyframes text-focus-out {
+  0% {
+
+    opacity: 1;
+  }
+  100% {
+
+    opacity: 0;
+  }
+}
+@keyframes text-focus-out {
+  0% {
+
+    opacity: 1;
+  }
+  100% {
+
+    opacity: 0;
+
+  }
+}
+
 
 .colour-change{
     animation: colour-change 2s linear infinite alternate both;
@@ -1236,12 +1257,13 @@ img::-moz-selection{color:#fff;background:0 0}
     z-index: 1;
     position: relative;
     transition: all 1.5s;
+    transform: scale(.9);
 }
 
 .enlarge:hover{
     position: relative;
     filter: grayscale(0);
-    transform: scale(2);
+    transform: scale(1.25);
     z-index: 100;
     background-color: #222;
     border-radius: 5%;
@@ -1296,6 +1318,40 @@ img::-moz-selection{color:#fff;background:0 0}
     transition: all 1s;
 }
 
+
+.glowRed{
+        transition: all 1s;
+    filter: invert(0);
+    filter: drop-shadow(0px 0px 5px #ffffff);
+
+
+
+}
+
+.glowCyan:hover{
+    
+    filter:  drop-shadow(10px 10px 200px #00ceff);
+    
+
+}
+
+.glowCyan{
+        transition: all 1s;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+
+
+
+}
+
+.glowRed:hover{
+    
+    filter:  drop-shadow(10px 10px 200px #ff0000);
+    
+
+}
+
+
+
 .glow:hover{
     filter:  drop-shadow(10px 10px 250px #ffffff);
 
@@ -1309,7 +1365,12 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .glowDark:hover{
     filter:  drop-shadow(10px 10px 250px #000);
+    
 
+}
+
+.padLogo{
+    padding-bottom: 10%;
 }
 
 #SpotifyWidget, .flipe {
