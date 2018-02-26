@@ -78,16 +78,30 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- Spotify Widget -->
-        
-            <div style="position: fixed; bottom: 10px;right: 10px">
+
+        <div id="" style="position: fixed; bottom: 10px;right: 10px">
+                <button class="spBtn" onclick="spotifyHide()"> Hide /Show</button>
+                <div id="spotifyWidget"> 
+               
                     <p class="text-focus-in nickInBodyCenterMusic">
            Have a listen?<br>
                     </p>  
             
                 
-             <iframe id="SpotifyWidget" class="nickSpotify " src="https://open.spotify.com/embed?uri=spotify:user:1288263527:playlist:725aGyokF8dlL1ERF4ATsG&theme=white&view=list" width="300" height="380" frameborder="0" allowtransparency="true" style="position: relative;margin: auto;"></iframe>
-                
+             <iframe id="" class="nickSpotify " src="https://open.spotify.com/embed?uri=spotify:user:1288263527:playlist:725aGyokF8dlL1ERF4ATsG&theme=white&view=list" width="300" height="380" frameborder="0" allowtransparency="true" style="position: relative;margin: auto;"></iframe>
+                 </div>
             </div>
+        
+        <script>
+                function spotifyHide() {
+                    var x = document.getElementById("spotifyWidget");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+        </script>
           <!-- /Spotify Widget --> 
         
         <!-- /.container-fluid -->
@@ -99,7 +113,7 @@
         <div class="row extRow parallax" style="padding-bottom: 0%;padding-top: 0%;">  
                 
              <div class="col-md-12">          
-             <img class="text-focus-in heartbeat" style="width: 30%; margin: auto; display: block; box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);border-radius: 100%"src="img/icon_nick3.svg" >         
+             <img class="text-focus-in heartbeat" style="width: 40%; margin: auto; display: block; box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);border-radius: 100%"src="img/icon_nick3.svg" >         
             </div>
             
             <div class="col-lg-12 ">
@@ -184,6 +198,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+    
+
 
 </body>
 
