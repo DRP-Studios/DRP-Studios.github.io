@@ -1132,6 +1132,16 @@ img::-moz-selection{color:#fff;background:0 0}
     padding-top: 5%;
 }
 
+.nickInBodyCenterLarge{
+    font-size: 10em; 
+    text-align: center; 
+    color: #ffffff; 
+    font-family: 'Amatic SC', serif;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .nickInBodyCenterMusic{
     font-size: 2em; 
     text-align: center; 
