@@ -327,7 +327,7 @@ img::-moz-selection{color:#fff;background:0 0}
 }
     
     .container-fluid {
-     padding:0;
+    padding:0;
     margin: 0px;
 }
     
@@ -521,6 +521,16 @@ img::-moz-selection{color:#fff;background:0 0}
     }
     
 
+}
+
+.col-container {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  flex: 1;
+  padding: 16px;
 }
 
 .logo{
@@ -1463,3 +1473,5 @@ img::-moz-selection{color:#fff;background:0 0}
     font-weight: bold; 
     font-size: 2em;
 }
+
+.halfImg
