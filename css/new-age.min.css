@@ -583,6 +583,20 @@ img::-moz-selection{color:#fff;background:0 0}
     
 }
 
+.imgFull{
+    width: 100%;
+    padding: .5%;
+    display: block;
+    margin: auto;
+    
+}
+
+.imgFullVert{
+    max-height: 80%;
+    max-width: 30%;
+
+}
+
 .custHeader{
     text-align: center; 
     color: azure; 
@@ -1177,18 +1191,17 @@ img::-moz-selection{color:#fff;background:0 0}
 .nickSplit{
     display: block;
     margin: auto;
-    width: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    width: 7.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
     transition: all 1s ease-in-out; 
 }
 
 .nickSplitAnim:hover{
-    transform: scale(1.2);
-    filter: invert(1); 
-    transform: translateY(10px);
-    transform: rotateX(30deg);
+    transform: scale(1.1);
+    filter: invert(a); 
+    
     
    
 }
@@ -1246,6 +1259,21 @@ img::-moz-selection{color:#fff;background:0 0}
     background-size: cover;
 }
 
+.parallaxNick{
+      /* The image used */
+    background-image: url(../img/nick/4-8-18a.png);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
 .parallaxAlt{
       /* The image used */
     background-image: url(../img/Decor/parallaxDark.svg);
@@ -1286,6 +1314,23 @@ img::-moz-selection{color:#fff;background:0 0}
     transform: scale(1.25);
     z-index: 100;
     background-color: #222;
+    border-radius: 5%;
+}
+
+.enlargeWhite{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all 1.5s;
+    transform: scale(.9);
+}
+
+.enlargeWhite:hover{
+    position: relative;
+    filter: grayscale(0);
+    transform: scale(1.25);
+    z-index: 100;
+    background-color: azure;
     border-radius: 5%;
 }
 
@@ -1350,18 +1395,24 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .glowCyan:hover{
     
-    filter:  drop-shadow(10px 10px 200px #00ceff);
-    
-
+    filter:  drop-shadow(10px 10px 200px #00ceff);    
 }
 
 .glowCyan{
         transition: all 1s;
     filter: drop-shadow(0px 0px 5px #ffffff);
-
-
-
 }
+
+.glowCyanNick:hover{
+    
+    filter:  drop-shadow(5px 5px 150px #00ceff);    
+}
+
+.glowCyanNick{
+        transition: all 1s;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
 
 .glowRed:hover{
     
