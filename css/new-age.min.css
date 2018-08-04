@@ -583,6 +583,12 @@ img::-moz-selection{color:#fff;background:0 0}
     
 }
 
+.imgLogoHalf{
+    width: 50%;
+    padding: 5%;
+    
+}
+
 .imgFull{
     width: 100%;
     padding: .5%;
