@@ -590,7 +590,7 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 .imgFull{
-    width: 100%;
+    width: 75%;
     padding: .5%;
     display: block;
     margin: auto;
@@ -1327,13 +1327,13 @@ img::-moz-selection{color:#fff;background:0 0}
     z-index: 1;
     position: relative;
     transition: all 1.5s;
-    transform: scale(.9);
+    transform: scale(.75);
 }
 
 .enlarge:hover{
     position: relative;
     filter: grayscale(0);
-    transform: scale(1.25);
+    transform: scale(.75);
     z-index: 100;
     background-color: #222;
     border-radius: 5%;
@@ -1346,7 +1346,7 @@ img::-moz-selection{color:#fff;background:0 0}
     transition: all 1.5s;
     transform: scale(.9);
     filter: sepia(.5);
-    filter: blur(2px);
+    filter: blur(5px);
 }
 
 .enlargeWhite:hover{
@@ -1355,7 +1355,7 @@ img::-moz-selection{color:#fff;background:0 0}
     filter: blur(0px);
     transform: scale(1.25);
     z-index: 100;
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.62);
     border-radius: 5%;
 }
 
