@@ -1293,6 +1293,7 @@ img::-moz-selection{color:#fff;background:0 0}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: saturate(.5)
    
 }
 
@@ -1392,14 +1393,14 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .fillTest{
     filter: invert(0);
-    filter: drop-shadow(0px 0px 15px #ffffff);
+    filter: drop-shadow(0px 0px 15px #222);
     transition: all 1s;
 }
 
 .fillTest:hover{
     filter: invert(1); 
-    filter:  drop-shadow(10px 10px 250px #ffffff);
-    transform: scale(1.25)
+    filter:  drop-shadow(10px 10px 250px #9231b5);
+    transform: scale(1.1)
 
 }
 
