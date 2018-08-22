@@ -1283,19 +1283,21 @@ img::-moz-selection{color:#fff;background:0 0}
 
 .parallaxNickRenders {
       /* The image used */
- background-image: url(../img/nick/21-8-18a.png);
+    background-image: url(../img/nick/21-8-18a.png);
     /* Full height */
     height: 100%;
     width: 100%;
+    margin-top: -50px;
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: saturate(.5)
-   
+    filter: saturate(.5);
+    
 }
+
 
 .parallaxAlt{
       /* The image used */
@@ -1552,3 +1554,22 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 .halfImg
+
+.parallax-container{
+/* Define the height of the container
+    where the image will be */
+    height:400px
+}
+
+video{
+    position: fixed;
+ 
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    z-index: -99
+}
