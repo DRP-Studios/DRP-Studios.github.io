@@ -1517,7 +1517,7 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
  .emailtext{
-        color: chocolate; font-size: 30pt;
+        color: chocolate; font-size: 24pt;
     }
 .svgAnim {
     animation: svgAnimation 5s ease-in-out infinite both;
