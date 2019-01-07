@@ -295,7 +295,7 @@ img::-moz-selection{color:#fff;background:0 0}
 @media (min-width: 250px) and (max-width: 767px) {
     
     .emailtext{
-        color: chocolate; font-size: 12pt
+        color: chocolate; font-size: 1em;
     }
     
     .navbar-default { margin-bottom: 0px; }
