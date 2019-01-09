@@ -1311,6 +1311,39 @@ img::-moz-selection{color:#fff;background:0 0}
     
 }
 
+.parallaxNickGraphics {
+      /* The image used */
+    background-image: url(../img/bg/bg_graphics.jpg);
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    margin-top: -50px;
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    filter: saturate(.5);
+    
+}
+
+.parallaxNickLogos{
+      /* The image used */
+    background-image: url(../img/bg/bg_logos.jpg);
+    /* Full height */
+    height: 100%;
+    margin-top: -50px;
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(.5);
+    
+}
+
 
 .parallaxAlt{
       /* The image used */
@@ -1351,6 +1384,22 @@ img::-moz-selection{color:#fff;background:0 0}
     filter: grayscale(0);
     transform: scale(1.5);
     z-index: 100;
+    background-color: #222;
+    border-radius: 5%;
+}
+
+.enlargeL{
+    filter: grayscale(1);
+    position: relative;
+    transition: all 1.5s;
+    transform: scale(.75);
+}
+
+.enlargeL:hover{
+    position: relative;
+    filter: grayscale(0);
+    transform: scale(4);
+ 
     background-color: #222;
     border-radius: 5%;
 }
@@ -1533,7 +1582,7 @@ img::-moz-selection{color:#fff;background:0 0}
         color: chocolate; font-size: 24pt;
     }
 .svgAnim {
-    animation: svgAnimation 5s ease-in-out infinite both;
+    animation: svgAnimation 5s ease-in-out both;
 }
 
 @keyframes svgAnimation{
