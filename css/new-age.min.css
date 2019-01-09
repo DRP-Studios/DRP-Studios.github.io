@@ -597,6 +597,10 @@ img::-moz-selection{color:#fff;background:0 0}
     
 }
 
+.logoLoad{
+    
+}
+
 .img25{
     width: 25%;
     padding: .5%;
@@ -917,8 +921,8 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 .ping {
-	-webkit-animation: ping 5s ease-in-out infinite both;
-	        animation: ping 5s ease-in-out infinite both;
+	-webkit-animation: ping 20s ease-in-out infinite both;
+	        animation: ping 20s ease-in-out infinite both;
 }
 
 
@@ -978,7 +982,8 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 .blur:hover{
-       animation: blur 5s ease-in-out both; 
+       animation: blur 1s linear both;
+    animation-fill-mode: forwards;
 }
 
 @keyframes blur{
