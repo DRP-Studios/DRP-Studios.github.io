@@ -597,6 +597,14 @@ img::-moz-selection{color:#fff;background:0 0}
     
 }
 
+.img25{
+    width: 25%;
+    padding: .5%;
+    display: block;
+    margin: auto;
+    
+}
+
 .imgFullVert{
     max-height: 80%;
     max-width: 30%;
