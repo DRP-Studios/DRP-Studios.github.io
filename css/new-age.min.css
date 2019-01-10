@@ -1242,8 +1242,9 @@ img::-moz-selection{color:#fff;background:0 0}
 }
 
 @media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) { 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
 
     .nickInBodyCenterSmall{
     font-size: 2em; 
