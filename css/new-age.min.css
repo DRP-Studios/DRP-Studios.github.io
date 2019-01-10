@@ -1241,7 +1241,7 @@ img::-moz-selection{color:#fff;background:0 0}
  
 }
 
-@media only screen 
+@media screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) 
 and (orientation : portrait) { 
