@@ -310,6 +310,30 @@ img::-moz-selection{
     background-color:#b22cff; 
 }
 
+.bgSubtext{
+    background-color: rgba(138, 43, 226, 0.74);
+}
+
+.bgDRPWeb{
+      /* The image used */
+    background-image: url(../img/bg/bg_drp_web.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 .rowServices{
     background: linear-gradient(45deg,#63E2FF,#B066FE); 
     padding-top: 2%;
@@ -1572,6 +1596,22 @@ img::-moz-selection{
     
 }
 
+.parallaxDRPBlurred{
+      /* The image used */
+    background-image: url(../img/bg/bg_drp_blurred_boxes_alt.jpg);
+    /* Full height */
+    height: 100%;
+    margin-top: -50px;
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(.5);
+    
+}
+
 
 .parallaxAlt{
       /* The image used */
@@ -1870,5 +1910,46 @@ video {
     filter: opacity(10%);
 }
 
+.puff-in-center {
+	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
 
+/**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
 
