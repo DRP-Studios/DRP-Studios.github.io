@@ -329,6 +329,21 @@ img::-moz-selection{
     background-color: black;
 }
 
+.bgDRPApp{
+      /* The image used */
+    background-image: url(../img/bg/bg_drp_appCA.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -1363,30 +1378,42 @@ img::-moz-selection{
     }
     
     .spBtn{
-    width: 100%;
-    margin: auto;
-    display: block;
-    border-radius: 15px;
-    background-color: #2daf22;
-    filter: drop-shadow(0px 0px 5px #000);
-    border: none;
-    text-align: center; 
-    color: #fffbfb; 
-    font-family: 'Amatic SC', serif;
-    font-weight: bold; 
-    font-size: 2em;
-    }
+        width: 100%;
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+        background-color: #2daf22;
+        filter: drop-shadow(0px 0px 5px #000);
+        border: none;
+        text-align: center; 
+        color: #fffbfb; 
+        font-family: 'Amatic SC', serif;
+        font-weight: bold; 
+        font-size: 2em;
+        }
     
     #SpotifyWidget, .flipe {
-    text-align: center;
-    color: white;
-    margin: auto;
-    display: block;
+        text-align: center;
+        color: white;
+        margin: auto;
+        display: block;
+        }
+        
 }
 
     #SpotifyWidget {
         display: block;
     }
+
+    .mobileNoPad{
+            font-size: 20px;
+
+        }
+
+        .mobileSmallHeader{
+            font-size: 25px;
+
+        }
  
 }
 
@@ -1457,6 +1484,17 @@ img::-moz-selection{
     #SpotifyWidget {
         display: block;
     }
+      
+    .mobileNoPad{
+            padding-left: none;
+            font-size: 1em;
+
+        }
+      
+     .mobileSmallHeader{
+            font-size: 15px;
+
+        }
 }
 
 .nickSplit{
