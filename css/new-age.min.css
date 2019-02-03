@@ -722,8 +722,8 @@ img::-moz-selection{
 }
 
 .imgFullVert{
-    max-height: 80%;
-    max-width: 30%;
+    max-height: 50%;
+    max-width: 50%;
 
 }
 
@@ -926,7 +926,7 @@ img::-moz-selection{
   }
 }
 
-.scale-in-ver-top{-webkit-animation:scale-in-ver-top 5s cubic-bezier(.25,.46,.45,.5) both;animation:scale-in-ver-top 5s cubic-bezier(.25,.46,.45,.5) both}
+.scale-in-ver-top{-webkit-animation:scale-in-ver-top 1s cubic-bezier(.25,.46,.45,.5) both;animation:scale-in-ver-top 1s cubic-bezier(.25,.46,.45,.5) both}
 
 @-webkit-keyframes scale-in-ver-top{0%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}@keyframes scale-in-ver-top{0%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}
 
@@ -1357,6 +1357,44 @@ img::-moz-selection{
             padding-left: 10%;
 
         }
+    
+    .enlarge{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+    }
+
+    .enlarge:hover{
+        position: relative;
+        filter: grayscale(0);
+        transform: scale(4);
+        z-index: 100;
+        background-color: #222;
+        border-radius: 10px;
+
+    }
+    
+    .enlargeVertical{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+    }
+
+    .enlargeVertical:hover{
+        position: relative;
+        filter: grayscale(0);
+        transform: scale(2);
+        z-index: 100;
+        background-color: #222;
+        border-radius: 10px;
+
+    }
 }
 @media screen and (min-width: 991px) and (max-width:1350px) {
     .mobileNoPad{
@@ -1373,6 +1411,31 @@ img::-moz-selection{
     filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
     transition: all 1s ease-in-out; 
     }
+    
+    .columFlex {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+    
+    .enlarge{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+}
+
+.enlarge:hover{
+    position: relative;
+    filter: grayscale(0);
+    transform: scale(4);
+    z-index: 100;
+    background-color: #222;
+    border-radius: 10px;
+
+}
 
 }
 
@@ -1414,6 +1477,25 @@ img::-moz-selection{
     filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
     transition: all 1s ease-in-out; 
     }
+    
+        .enlarge{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+}
+
+    .enlarge:hover{
+    position: relative;
+    filter: grayscale(0);
+
+    z-index: 100;
+    background-color: #222;
+    border-radius: 10px;
+
+}
     
     .spBtn{
         width: 100%;
@@ -1497,6 +1579,28 @@ img::-moz-selection{
     transition: all 1s ease-in-out; 
     }  
     
+       .enlarge{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+}
+
+    .enlarge:hover{
+    position: relative;
+    filter: grayscale(0);
+
+    z-index: 100;
+    background-color: #222;
+    border-radius: 10px;
+
+}
+
+
+}  
+      
     .spBtn{
     width: 100%;
     margin: auto;
@@ -1715,22 +1819,7 @@ img::-moz-selection{
         }
 }
 
-.enlarge{
-    filter: grayscale(1);
-    z-index: 1;
-    position: relative;
-    transition: all 1.5s;
-    transform: scale(.75);
-}
 
-.enlarge:hover{
-    position: relative;
-    filter: grayscale(0);
-    transform: scale(1.5);
-    z-index: 100;
-    background-color: #222;
-    border-radius: 5%;
-}
 
 .enlargeL{
     filter: grayscale(1);
@@ -1985,6 +2074,46 @@ video {
     overflow: hidden;
     filter: opacity(10%);
 }
+
+.columFlex {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.columFlex img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.rowFlex {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columFlex {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columFlex {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 .puff-in-center {
 	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
