@@ -1037,8 +1037,11 @@ img::-moz-selection{
 }
 
 .ping {
-	-webkit-animation: ping 20s ease-in-out infinite both;
-	        animation: ping 20s ease-in-out infinite both;
+	-webkit-animation: ping 5s ease-in-out infinite both;
+	        animation: ping 5s ease-in-out infinite both;
+    border-color: white;
+    border-width: thick;
+    border-style: solid;
 }
 
 
@@ -1322,7 +1325,7 @@ img::-moz-selection{
     font-weight: bold;
     padding-top: 5%;
     padding-bottom: 5%;
-    width: 50%;
+    width: 75%;
     display: block;
     margin: auto;
 }
@@ -1343,6 +1346,11 @@ img::-moz-selection{
     }
 
 @media screen and (min-width: 1400px) {
+    
+    .headerLarge{
+        width: 50%;
+    }
+    
    .drpSplit{
     display: block;
     margin: auto;
@@ -1378,6 +1386,26 @@ img::-moz-selection{
 
     }
     
+    .enlargeLogo{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+    }
+
+    .enlargeLogo:hover{
+        position: relative;
+        filter: grayscale(0);
+        transform: scale(1.5);
+        z-index: 100;
+        background-color: #222;
+        border-radius: 10px;
+
+    }
+    
+    
     .enlargeVertical{
     filter: grayscale(1);
     z-index: 1;
@@ -1396,6 +1424,32 @@ img::-moz-selection{
         border-radius: 10px;
 
     }
+    
+    .nickInBodyCenterSmall{
+    font-size: 3.5em; 
+    text-align: center; 
+    color: #000; 
+    font-family: 'Amatic SC', serif;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    display: block;
+    margin: auto;
+    }
+       .nickSplit{
+    display: block;
+    margin: auto;
+    width: 75%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
+    transition: all 1s ease-in-out; 
+    
+
+
+}
+        
 }
 @media screen and (min-width: 991px) and (max-width:1350px) {
     .mobileNoPad{
@@ -1426,7 +1480,27 @@ img::-moz-selection{
     transition: all .5s ease-in-out;
     transform: scale(1) ;
 
-}
+    }
+    
+     .enlargeLogo{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: scale(1) ;
+
+    }
+
+    .enlargeLogo:hover{
+        position: relative;
+        filter: grayscale(0);
+        transform: scale(1.5);
+        z-index: 100;
+        background-color: #222;
+        border-radius: 10px;
+
+    }
+    
 
 .enlarge:hover{
     position: relative;
@@ -1450,7 +1524,7 @@ img::-moz-selection{
 }
 }
     
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 768px) and (max-width: 991px) {
    .nickInBodyCenterSmall{
     font-size: 2em; 
     text-align: center; 
@@ -1458,6 +1532,8 @@ img::-moz-selection{
     font-family: 'Amatic SC', serif;
     font-weight: bold;
     padding-top: 5%;
+           width: 75%;
+
     }
     
     .nickInBodyCenter{
@@ -1471,12 +1547,11 @@ img::-moz-selection{
     .nickSplit{
     display: block;
     margin: auto;
-    width: 10%;
+    width: 25%;
     padding-top: 2%;
     padding-bottom: 2%;
     filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
-    transition: all 1s ease-in-out; 
-    }
+        transition: all 1s ease-in-out; }
     
     .drpSplit{
     display: block;
@@ -1485,15 +1560,34 @@ img::-moz-selection{
     padding-top: 2%;
     padding-bottom: 2%;
     filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
-    transition: all 1s ease-in-out; 
-    }
+        transition: all 1s ease-in-out; }
     
         .enlarge{
     filter: grayscale(1);
     z-index: 1;
     position: relative;
     transition: all .5s ease-in-out;
+            transform: scale(1) ;}
+
+     .enlargeLogo{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
     transform: scale(1) ;
+
+    }
+
+    .enlargeLogo:hover{
+        position: relative;
+        filter: grayscale(0);
+        transform: scale(1.5);
+        z-index: 100;
+        background-color: #222;
+        border-radius: 10px;
+
+    }
+    
 
 }
 
@@ -1550,7 +1644,7 @@ img::-moz-selection{
   and (-webkit-min-device-pixel-ratio: 3) { 
 
     .nickInBodyCenterSmall{
-    font-size: 2em; 
+    font-size: 1em; 
     text-align: center; 
     color: #000; 
     font-family: 'Amatic SC', serif;
@@ -1720,7 +1814,7 @@ img::-moz-selection{
 
 .parallaxNick{
       /* The image used */
-    background-image: url(../img/nick/4-8-18a.png);
+    background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.png);
 
     /* Full height */
     height: 100%; 
@@ -1753,9 +1847,10 @@ img::-moz-selection{
 
 .parallaxNickGraphics {
       /* The image used */
-    background-image: url(../img/bg/bg_graphics.jpg);
+    background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.png);
     /* Full height */
     height: 100%;
+    width: 100%;
     margin-top: -50px;
 
     /* Create the parallax scroWlling effect */
@@ -1772,6 +1867,7 @@ img::-moz-selection{
     background-image: url(../img/bg/bg_logos.jpg);
     /* Full height */
     height: 100%;
+    width: 100%;
     margin-top: -50px;
 
     /* Create the parallax scroWlling effect */
@@ -2079,7 +2175,7 @@ video {
     min-width: 100%;
     min-height: 100%;
     overflow: hidden;
-    filter: opacity(10%);
+    filter: opacity(100%);
 }
 
 .columFlex {

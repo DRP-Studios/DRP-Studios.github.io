@@ -109,9 +109,19 @@
     </nav>       
     <section id="portfolio">
         <div class="container ">
-            <video autoplay loop="true"  width="1920" height="1080" style="z-index: -1000">
+                <script>
+                var vid = document.getElementById("bgRender"); 
+                
+                document.querySelector('bgRender').defaultPlayRate = 125;
+
+            </script>
+            
+            
+            <video id="bgRender" autoplay loop="true"  width="1920" height="1080" style="z-index: -1000">
             <source type="video/mp4" src="img/nick/Forgotten.mp4">
             </video>
+            
+         
             
             <div class="row">   
                  <div class="col-md-12">
