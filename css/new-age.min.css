@@ -1440,7 +1440,7 @@ img::-moz-selection{
        .nickSplit{
     display: block;
     margin: auto;
-    width: 75%;
+    width: 25%;
     padding-top: 2%;
     padding-bottom: 2%;
     filter: drop-shadow( 0px 0px 25px #000 ), invert(0);
@@ -1824,15 +1824,13 @@ img::-moz-selection{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
 }
 
 
 .parallaxNickRenders {
       /* The image used */
-    background-image: url(../img/nick/21-8-18a.png);
+    background-image: url(../img/nick/Renders/14-02-19M.png);
     /* Full height */
-    height: 100%;
     width: 100%;
     margin-top: -50px;
 
@@ -1864,7 +1862,7 @@ img::-moz-selection{
 
 .parallaxNickLogos{
       /* The image used */
-    background-image: url(../img/bg/bg_logos.jpg);
+    background-image: url(../img/bg/bg_logos1.jpg);
     /* Full height */
     height: 100%;
     width: 100%;
@@ -2180,9 +2178,9 @@ video {
 
 .columFlex {
   -ms-flex: 20%; /* IE10 */
-  flex: 20%;
-  max-width: 20%;
-  padding: 0 4px;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
 }
 
 .columFlex img {
