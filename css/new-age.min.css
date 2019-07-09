@@ -1128,10 +1128,9 @@ img::-moz-selection{
 
 
 .animRot{
+        filter: blur(1);
     transform: scale(1);
     transition: all 1s;
-    background-image: url(/img/Graphics/abstractAlt.jpg);
-    background-size: contain;
 }
 
 .animRot:hover{
@@ -1139,7 +1138,6 @@ img::-moz-selection{
         border-radius: 100%;
         opacity:1; 
         filter: invert(1);
-       background-image: url(/img/Graphics/abstractAlt.jpg);
     
 }
 
