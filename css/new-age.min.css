@@ -411,6 +411,7 @@ img::-moz-selection{
     background-repeat: no-repeat;
     background-size: cover;
 }
+    
 
 .parallaxAlt:hover{
       /* The image used */
@@ -568,6 +569,7 @@ img::-moz-selection{
 
 @media (min-width: 767px) {
   
+    
     .serviceBody{
         background-color: #333;
         color: azure;
@@ -780,8 +782,8 @@ img::-moz-selection{
 }
 
 .btnPad2{
-    padding: 25%;
-    background-color: black;
+    padding:20px;
+    background-color: rgba(255, 255, 255, 0.11);
     z-index: 9999;
 }
 /* ----------------------------------------------
@@ -969,7 +971,7 @@ img::-moz-selection{
     
 .heartbeat {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 10s ease-in-out infinite both;
+	        animation: heartbeat 3s ease-in-out infinite both;
 }
 
 /**
@@ -1129,15 +1131,24 @@ img::-moz-selection{
 
 .animRot{
         filter: blur(1);
-    transform: scale(1);
+    transform: scale(.75);
     transition: all 1s;
 }
 
 .animRot:hover{
-    transform: scale(.75);
+    transform: scale(.5);
         border-radius: 100%;
         opacity:1; 
-        filter: invert(1);
+    
+}
+.tdtest{
+        filter: blur(0px);
+
+    
+}
+
+.tdtest hover{
+        filter: blur(100px);
     
 }
 
@@ -1258,6 +1269,48 @@ img::-moz-selection{
   transform: translate3d(0,0,0);
 }
 
+.kenburns-bottom {
+	-webkit-animation: kenburns-bottom 1s  both;
+	        animation: kenburns-bottom 1s  both;
+}
+
+@-webkit-keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.15) translateY(15px);
+            transform: scale(1.15) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  50% {
+    -webkit-transform: scale(1.) translateY(05px);
+            transform: scale(1.) translateY(05px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+    
+    100% {
+    -webkit-transform: scale(.5) translateY(0px);
+            transform: scale(.5) translateY(0px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
+
 
 .maInBodyCenterSmall{
     font-size: 2.25em; 
@@ -1352,7 +1405,7 @@ img::-moz-selection{
 @media screen and (min-width: 1400px) {
     
     .headerLarge{
-        width: 50%;
+        width: 10%;
     }
     
      .headerImg{
@@ -1380,21 +1433,22 @@ img::-moz-selection{
         }
     
     .enlarge{
-    filter: grayscale(1);
     z-index: 1;
     position: relative;
     transition: all .5s ease-in-out;
     transform: scale(1) ;
+    padding-bottom: 5%;
 
     }
 
     .enlarge:hover{
         position: relative;
-        filter: grayscale(0);
-        transform: scale(4);
+        transform: scale(1.2);
         z-index: 100;
         background-color: #222;
         border-radius: 10px;
+            padding-bottom: 5%;
+
 
     }
     
@@ -1430,7 +1484,7 @@ img::-moz-selection{
     .enlargeVertical:hover{
         position: relative;
         filter: grayscale(0);
-        transform: scale(2);
+        transform: scale(1.5);
         z-index: 100;
         background-color: #222;
         border-radius: 10px;
@@ -1780,7 +1834,7 @@ img::-moz-selection{
 
 .nickSplitAnim:hover{
     transform: scale(1.1);
-    filter: invert(1); 
+    filter: invert(.1); 
     
     
    
@@ -1841,7 +1895,7 @@ img::-moz-selection{
 
 .parallaxNick{
       /* The image used */
-    background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.png);
+    background-image: url(../img/nick/Renders/30-06-19d-2x.jpg);
 
     /* Full height */
     height: 100%; 
@@ -1853,26 +1907,38 @@ img::-moz-selection{
     background-size: cover;
 }
 
-
-.parallaxNickRenders {
+.parallaxNickAlt{
       /* The image used */
-    background-image: url(../img/nick/Renders/14-02-19M.png);
+    background-image: url(../img/nick/Renders/01-05-19-Reddit2.png);
+
     /* Full height */
-    width: 100%;
-    margin-top: -50px;
+    height: 100%; 
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: saturate(.5);
+}
+
+.parallaxNickRenders {
+      /* The image used */
+    background-image: url(../img/nick/Renders/8sfrpjc8g2r01.jpg);
+    /* Full height */
+    max-width: 100%;
+    max-height: 100%;
+
+    /* Create the parallax scroWlling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
 .parallaxNickGraphics {
       /* The image used */
-    background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.png);
+    background-image: url(../img/nick/Renders/14-02-19M.png);
     /* Full height */
     height: 100%;
     width: 100%;
@@ -1889,7 +1955,7 @@ img::-moz-selection{
 
 .parallaxNickLogos{
       /* The image used */
-    background-image: url(../img/bg/bg_logos1.jpg);
+    background-image: url(../img/nick/Renders/14-05-19a.png);
     /* Full height */
     height: 100%;
     width: 100%;
@@ -1985,6 +2051,26 @@ img::-moz-selection{
     border-radius: 5%;
 }
 
+.scaleDownWhite{
+    filter: grayscale(1);
+    z-index: 1;
+    position: relative;
+    transition: all 1.5s;
+    transform: scale(.5);
+    filter: sepia(.5);
+    filter: blur(0  px);
+}
+
+.scaleDownWhite:hover{
+    position: relative;
+    filter: grayscale(0);
+    filter: blur(0px);
+    transform: scale(0.8);
+    z-index: 100;
+    background-color: rgba(240, 255, 255, 0.62);
+    border-radius: 5%;
+}
+
 .drainCol{
     animation: drainColour 5s ease infinite both;
 }
@@ -2056,12 +2142,12 @@ img::-moz-selection{
 
 .glowCyanNick:hover{
     
-    filter:  drop-shadow(5px 5px 150px #00ceff);    
+    filter:  drop-shadow(2px 2px 100px #00ceff);    
 }
 
 .glowCyanNick{
         transition: all 1s;
-    filter: drop-shadow(0px 0px 5px #ffffff);
+    filter: drop-shadow(0px 0px 2px #ffffff);
 }
 
 
@@ -2205,9 +2291,9 @@ video {
 
 .columFlex {
   -ms-flex: 20%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 10px;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 20px;
 }
 
 .columFlex img {
