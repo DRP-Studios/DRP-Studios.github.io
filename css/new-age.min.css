@@ -2287,6 +2287,7 @@ video {
     min-height: 100%;
     overflow: hidden;
     filter: opacity(100%);
+    filter:sepia(.5);
 }
 
 .columFlex {
@@ -2404,7 +2405,7 @@ video {
 
 * { box-sizing: border-box; }
 .video-background {
-  background-image: url(../img/nick/Renders/0300.png);
+  background-image: url(../img/nick/Renders/30-06-19d.png);
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
@@ -2437,4 +2438,29 @@ video {
 }
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
+    .video-background { display: none;}
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url(/img/nick/Renders/30-06-19bN.png);
+        background-size: cover;
+    }
 }
