@@ -2287,7 +2287,7 @@ video {
     min-height: 100%;
     overflow: hidden;
     filter: opacity(100%);
-    filter:sepia(.5);
+ 
 }
 
 .columFlex {
