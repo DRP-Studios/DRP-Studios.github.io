@@ -309,17 +309,18 @@
             </a>
             </p> 
             
-        <form action="send_form_email.php" method="post">
-            <input type="text" name="contact_name" placeholder="Contact Name" maxlength="50" style="color: black">
-            <br>
-            <input type="text" name="email" placeholder="Email" maxlength="50" style="color: black">
-            <br>
-            <textarea name="subject"  maxlength="256" rows="1" placeholder="Subject" style="color: black"></textarea>
-            <br>
-            <textarea name="message"  maxlength="1000" rows="5" cols="50" placeholder="Message" style="color: black"></textarea>
-            <br>
-            <input type="submit" value="Submit" style="color: black">
-        </form> 
+                <form class="form-group col-xs-5 col-centered" style="margin-bottom: 50px;" action="send_form_email.php" method="post">
+                        <input class="form-control" type="text" name="contact_name" placeholder="Contact Name" maxlength="50" style="color: black">
+                        <br>
+                        <input class="form-control" type="text" name="email" placeholder="Email" maxlength="50" style="color: black">
+                        <br>
+                        <input class="form-control" name="subject"  type="text" placeholder="Subject" style="color: black">
+                        <br>
+                        <textarea class="form-control" name="message"  maxlength="1000" rows="5" cols="50" placeholder="Message" style="color: black"></textarea>
+                        <br>
+                    <input class="btn btn-lg" style="background-color: rgb(75, 61, 137); color: white; border-color: white;" type="submit" value="Submit" style="color: black">
+
+                </form> 
             
             </div>
             <ul class="list-inline list-social">
