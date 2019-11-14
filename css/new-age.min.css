@@ -370,8 +370,8 @@ img::-moz-selection{
     display: block;
     margin-left: auto;
     margin-right: auto;
-	-webkit-animation: slide-in-blurred-top 1.0s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: slide-in-blurred-top 1.0s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	-webkit-animation: slide-in-blurred-top 5.0s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-top 5.0s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 .subHeader{
@@ -1054,6 +1054,8 @@ img::-moz-selection{
     border-color: white;
     border-width: thick;
     border-style: solid;
+    border-radius: 250px;
+    padding: 150px;
 }
 
 /**
