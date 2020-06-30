@@ -1974,17 +1974,19 @@ img::-moz-selection{
 
 .parallaxDRPBlurred{
       /* The image used */
-    background-image: url(../img/bg/bg_drp_blurred_boxes_alt.jpg);
+    background-image: url(../img/bg/DRPRdBg.png);
+    background-color: aliceblue;
     /* Full height */
+    padding-top: 10%;
     height: 100%;
-    margin-top: -50px;
+
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: saturate(.5);
+    
     
 }
 
@@ -1993,9 +1995,11 @@ img::-moz-selection{
       /* The image used */
     background-image: url(../img/Decor/parallaxDark.svg);
     background-color: aliceblue;
+    padding-top: 50%;
 
     /* Full height */
     height: 100%;
+
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -2163,7 +2167,7 @@ img::-moz-selection{
 
 
 .glow:hover{
-    filter:  drop-shadow(10px 10px 250px #ffffff);
+    filter:  drop-shadow(5px 5px 25px #ffffff);
 
 }
 
