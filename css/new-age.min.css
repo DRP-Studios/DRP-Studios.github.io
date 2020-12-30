@@ -2008,6 +2008,23 @@ img::-moz-selection{
     background-size: cover;
 }
 
+.parallaxNick{
+      /* The image used */
+    background-image: url(../img/nick/Renders/14-02-19M.png);
+    background-color: aliceblue;
+
+
+    /* Full height */
+    height: 100%;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 @keyframes paraAltAnim{
