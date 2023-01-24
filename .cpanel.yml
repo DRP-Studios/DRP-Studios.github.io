@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/drpstudios/repositories/DRP-Studioshub.io/
+    - export DEPLOYPATH=/home/drpstudios/public_html/DRP-Studioshub.io/
     - /bin/cp -R * $DEPLOYPATH
