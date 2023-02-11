@@ -6,6 +6,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&family=Signika+Negative:wght@300&display=swap');
 
  html  {
 
@@ -1330,12 +1331,12 @@ img::-moz-selection{
 
 
 .nickInBody{
-    font-size: 4em; 
-    text-align: right; 
+
+    text-align: center; 
     color: #000; 
-    font-family: 'Amatic SC', serif;
-    font-weight: bold;
-    padding-top: 5%;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-size: 3em
 }
 
 
@@ -1968,7 +1969,7 @@ img::-moz-selection{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: saturate(.5);
+    filter: blur(1.0);
     
 }
 
@@ -2095,35 +2096,19 @@ img::-moz-selection{
 }
 
 .drainCol{
-    animation: drainColour 5s ease infinite both;
+    animation: drainColour 10s ease infinite both;
 }
 
 @keyframes drainColour{
-    0%{
-        filter: grayscale(0);
-    }
-    50%{
-        filter: grayscale(1);
-    }
-    100%{
-        filter: grayscale(0);
-    }
-}
-
-.drainCol:hover{
-    animation-name: drainColourHover;
-    animation-iteration-count: 1;
-    animation-duration: 1;
-}
-
-@keyframes drainColourHover{
-    0%{
+  0%{
         filter: hue-rotate(0deg);
     }
     100%{
         filter: hue-rotate(360deg);
     }
 }
+
+
 
 .fillTest{
     filter: invert(0);
