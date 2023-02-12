@@ -1896,20 +1896,6 @@ img::-moz-selection{
     background-size: cover;
 }
 
-.parallaxNick{
-      /* The image used */
-    background-image: url(../img/nick/Renders/30-06-19d-2x.jpg);
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scroWlling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .parallaxNickAlt{
       /* The image used */
     background-image: url(../img/nick/Renders/01-05-19b.png);
@@ -1962,7 +1948,7 @@ img::-moz-selection{
     /* Full height */
     height: 100%;
     width: 100%;
-    margin-top: -50px;
+    padding-top: 50px;
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
@@ -2010,13 +1996,11 @@ img::-moz-selection{
 
 .parallaxNick{
       /* The image used */
-    background-image: url(../img/nick/nickbgoutlines.png);
-    background-color: aliceblue;
-
-
+    /*background-image: url(../img/nick/NS_Gfk.svg);*/
+    background-color: black;
     /* Full height */
-    height: 100%;
-
+    width: 100%;
+    opacity: 90%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -2096,15 +2080,15 @@ img::-moz-selection{
 }
 
 .drainCol{
-    animation: drainColour 10s ease infinite both;
+    animation: drainColour 30s ease infinite both;
 }
 
 @keyframes drainColour{
   0%{
-        filter: hue-rotate(0deg);
+        filter: hue-rotate(360deg);
     }
     100%{
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(0deg);
     }
 }
 
