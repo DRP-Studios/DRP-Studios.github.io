@@ -1932,6 +1932,7 @@ img::-moz-selection{
     height: 100%;
     width: 100%;
     margin-top: -50px;
+  
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
@@ -1948,8 +1949,9 @@ img::-moz-selection{
     /* Full height */
     height: 80%;
     width: 40%;
-    padding-top: 50px;
+    padding-top: 250px;
     padding-bottom: 15%;
+    align-content: center;
 
     -webkit-mask-image:url(../img/nick/text_nickAlt3.svg);
     -webkit-mask-repeat:no-repeat;
