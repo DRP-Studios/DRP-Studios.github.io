@@ -1947,9 +1947,9 @@ img::-moz-selection{
     background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.png);
     /* Full height */
     height: 80%;
-    width: 100%;
+    width: 40%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 15%;
 
     -webkit-mask-image:url(../img/nick/text_nickAlt3.svg);
     -webkit-mask-repeat:no-repeat;
@@ -1960,7 +1960,7 @@ img::-moz-selection{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(1.0);
+    filter: blur(.0);
     
 }
 
@@ -2086,27 +2086,33 @@ img::-moz-selection{
 }
 
 .drainCol{
-    animation: drainColour 10s ease infinite both;
+    animation: drainColour 15s ease-in-out infinite both;
 }
 
 @keyframes drainColour{
   0%{
-       filter: grayscale(0);
-        transform: skewY(0deg);
-      
-    }
-    50%{
 
-        filter: grayscale(.5);
-        transform: skewY(-2deg);
+        transform: skewY(-10deg);
+        filter: hue-rotate(0deg);
+    }
+    20%{
+
+       
+    }
+
+ 40%{
+ transform: skewY(10deg);
+    }
+        
+80%{
+
+
 
         
     }
     100%{
-        
-        filter: grayscale(0);
-          transform: skewY(0deg);
-
+        transform: skewY(-10deg);
+        filter: hue-rotate(360deg);
     }
 }
 
