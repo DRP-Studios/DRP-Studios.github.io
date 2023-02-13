@@ -1944,11 +1944,16 @@ img::-moz-selection{
 
 .parallaxNickLogos{
       /* The image used */
-    background-image: url(../img/nick/Renders/14-05-19a.png);
+    background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.png);
     /* Full height */
-    height: 100%;
+    height: 80%;
     width: 100%;
     padding-top: 50px;
+    padding-bottom: 50px;
+
+    -webkit-mask-image:url(../img/nick/text_nickAlt3.svg);
+    -webkit-mask-repeat:no-repeat;
+     -webkit-mask-position:center;
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
@@ -1958,6 +1963,7 @@ img::-moz-selection{
     filter: blur(1.0);
     
 }
+
 
 .parallaxDRPBlurred{
       /* The image used */
@@ -2080,15 +2086,27 @@ img::-moz-selection{
 }
 
 .drainCol{
-    animation: drainColour 30s ease infinite both;
+    animation: drainColour 10s ease infinite both;
 }
 
 @keyframes drainColour{
   0%{
-        filter: hue-rotate(360deg);
+       filter: grayscale(0);
+        transform: skewY(0deg);
+      
+    }
+    50%{
+
+        filter: grayscale(.5);
+        transform: skewY(-2deg);
+
+        
     }
     100%{
-        filter: hue-rotate(0deg);
+        
+        filter: grayscale(0);
+          transform: skewY(0deg);
+
     }
 }
 
@@ -2102,7 +2120,7 @@ img::-moz-selection{
 
 .fillTest:hover{
     filter: invert(1); 
-    filter:  drop-shadow(10px 10px 250px #9231b5);
+    filter:  drop-shadow(10px 10px 25px #9231b5);
     transform: scale(1.1)
 
 }
