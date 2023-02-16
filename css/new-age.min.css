@@ -783,8 +783,7 @@ img::-moz-selection{
 }
 
 .btnPad2{
-    padding:20px;
-    background-color: rgba(255, 255, 255, 0.11);
+    padding:2%;
     z-index: 9999;
 }
 /* ----------------------------------------------
@@ -1141,7 +1140,7 @@ img::-moz-selection{
 .animRot:hover{
     transform: scale(.5);
         border-radius: 100%;
-        opacity:1; 
+
     
 }
 .tdtest{
@@ -1430,17 +1429,17 @@ img::-moz-selection{
     }
     
     .mobileNoPad{
-            padding-left: 10%;
-            font-size: 40px;
+        padding-left: 10%;
+        font-size: 40px;
 
         }
     
     .enlarge{
-    z-index: 1;
-    position: relative;
-    transition: all .5s ease-in-out;
-    transform: scale(1) ;
-    padding-bottom: 5%;
+        z-index: 1;
+        position: relative;
+        transition: all .5s ease-in-out;
+        transform: scale(1) ;
+        padding-bottom: 5%;
 
     }
 
@@ -1450,8 +1449,7 @@ img::-moz-selection{
         z-index: 100;
         background-color: #222;
         border-radius: 10px;
-            padding-bottom: 5%;
-
+        padding-bottom: 5%;
 
     }
     
@@ -1947,9 +1945,10 @@ img::-moz-selection{
     animation: parallaxNickLogosAnim 10s normal forwards ease-in-out ;
       /* The image used */
     background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.webp);
+    background-color: black;
     /* Full height */
-    height: 80%;
-    width: 60%;
+    height: 60%;
+    width: 40%;
     padding-top: 250px;
     padding-bottom: 15%;
     align-content: center;
@@ -1967,13 +1966,9 @@ img::-moz-selection{
     background-size: cover;
     
     
+    
 }
 
-@keyframes parallaxNickLogosAnim{
-100%{
-    transform: scale(.8);
-    }
-}
 
 
 .parallaxDRPBlurred{
@@ -2027,18 +2022,6 @@ img::-moz-selection{
 }
 
 
-
-@keyframes paraAltAnim{
-    0%{    
-        filter: hue-rotate(0deg);
-        }
-    100%{    
-        filter: hue-rotate(180deg);
-        }
-}
-
-
-
 .enlargeL{
     filter: grayscale(1);
     position: relative;
@@ -2073,7 +2056,6 @@ img::-moz-selection{
     z-index: 100;
     background-color: rgba(240, 255, 255, 0.62);
     border-radius: 5%;
-
 }
 
 .scaleDownWhite{
@@ -2097,14 +2079,15 @@ img::-moz-selection{
 }
 
 .drainCol{
-    animation: drainColour 15s ease-in-out infinite both;
+    animation: drainColour 20s ease-in-out infinite both;
+    background-color: black;
 }
 
 @keyframes drainColour{
   0%{
 
-        transform: skewY(-10deg);
-        filter: hue-rotate(0deg);
+
+        
     }
     20%{
 
@@ -2112,8 +2095,13 @@ img::-moz-selection{
     }
 
  40%{
- transform: skewY(10deg);
+
+        transform: scale(.8);
+        transform: skewY(5deg);
+
+        
     }
+    
         
 80%{
 
@@ -2122,17 +2110,16 @@ img::-moz-selection{
         
     }
     100%{
-        transform: skewY(-10deg);
-        filter: hue-rotate(360deg);
+
     }
 }
 
 
 .drainCol2{
-    animation: drainColour 15s ease-in-out  both;
+    animation: drainColour2 15s ease-in-out normal;
 }
 
-@keyframes drainColour{
+@keyframes drainColour2{
   0%{
 
         transform: skewY(1deg);
@@ -2183,13 +2170,9 @@ img::-moz-selection{
         transition: all 1s;
     filter: invert(0);
     filter: drop-shadow(0px 0px 5px #ffffff);
-
-
-
 }
 
 .glowCyan:hover{
-    
     filter:  drop-shadow(10px 10px 200px #00ceff);    
 }
 
@@ -2212,10 +2195,7 @@ img::-moz-selection{
 .glowRed:hover{
     
     filter:  drop-shadow(10px 10px 200px #ff0000);
-    
-
 }
-
 
 
 .glow:hover{
@@ -2392,7 +2372,6 @@ video {
 	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
-
 /**
  * ----------------------------------------
  * animation puff-in-center
@@ -2503,22 +2482,43 @@ video {
     #videoBG {
         width:100%;
         height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
     #videoBG { 
+        align-items: center;
+        display: flex;
         width:auto;
-        height: 100%;
+
+
     }
 }
 
 @media (max-width: 767px) {
     #videoBG {
         display: none;
+        align-items: center;
     }
     body {
         
         background-size: cover;
     }
+}
+
+.videoCenter{
+  /*margin: auto;*/
+  display: flex;
+  flex-direction: coulumn;
+ /* justify-content: center;*/
+ align-items: center;
+}
+
+.vid{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
 }
