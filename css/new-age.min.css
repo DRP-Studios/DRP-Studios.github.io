@@ -1969,7 +1969,7 @@ img::-moz-selection{
 
 .parallaxDRPBlurred{
       /* The image used */
-    background-image: url(../img/bg/DRPRdBg.png);
+    background-image: url(../img/bg/DRPRdBg.webp);
     background-color: aliceblue;
     /* Full height */
 
