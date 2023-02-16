@@ -1944,32 +1944,41 @@ img::-moz-selection{
 }
 
 .parallaxNickLogos{
+    animation: parallaxNickLogosAnim 10s normal forwards ease-in-out ;
       /* The image used */
     background-image: url(../img/nick/Graphics/AucklandAlleyNeonCroppedWobbledDark.webp);
     /* Full height */
     height: 80%;
-    width: 40%;
+    width: 60%;
     padding-top: 250px;
     padding-bottom: 15%;
     align-content: center;
+    
 
     -webkit-mask-image:url(../img/nick/text_nickAlt3.svg);
     -webkit-mask-repeat:no-repeat;
      -webkit-mask-position:center;
+    
 
     /* Create the parallax scroWlling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(.0);
     
+    
+}
+
+@keyframes parallaxNickLogosAnim{
+100%{
+    transform: scale(.8);
+    }
 }
 
 
 .parallaxDRPBlurred{
       /* The image used */
-    background-image: url(../img/bg/DRPRdBg.webp);
+    background-image: url(../img/bg/DRPRMainBackground.jpeg);
     background-color: aliceblue;
     /* Full height */
 
